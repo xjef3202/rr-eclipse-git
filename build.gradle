@@ -1,0 +1,97 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+apply plugin: 'org.sonarqube'
+apply plugin:  'jacoco'
+apply plugin: 'docker'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+group='com.sysco.services'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE")
+        classpath ("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.2")
+        classpath("com.github.abirmingham:gradle-jacoco-plugin:1.0")
+        classpath('se.transmode.gradle:gradle-docker:1.2')
+    }
+}
+
+configurations {
+    runtime.exclude group: "org.springframework.boot", module: "org.springframework.boot:spring-boot-starter-logging"
+    runtime.exclude group: "org.slf4j", module: "slf4j-log4j12"
+}
+
+jar {
+    baseName = 'smxplus-orch-service'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sonarqube {
+    properties {
+        property "sonar.host.url", "http://ms238mgmtcim01:9000/"
+        property "sonar.login", "admin"
+        property "sonar.password", "admin"
+        property "sonar.exclusions", "**/model/**, **/constants/**, **/config/**, **/enums/**, **/Application.java"
+        property "sonar.jacoco.reportPath", "${project.buildDir}/jacoco/test.exec"
+    }
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination "${buildDir}/jacocoHtml"
+    }
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-actuator:1.4.1.RELEASE'
+    compile 'org.projectlombok:lombok:1.16.10'
+    compile 'org.springframework:spring-jdbc:4.3.3.RELEASE'
+    compile 'commons-dbcp:commons-dbcp:1.4'
+    compile 'io.springfox:springfox-swagger2:2.6.0'
+    compile 'io.springfox:springfox-swagger-ui:2.6.0'
+    compile 'org.apache.httpcomponents:httpclient:4.5.2'
+    compile 'org.json:json:20090211'
+    compile group: 'com.lowagie', name: 'itext', version: '2.1.7'
+    compile group: 'org.olap4j', name: 'olap4j', version: '1.2.0'
+    compile group: 'com.google.guava', name: 'guava', version: '21.0-rc1'
+
+
+    compile ('net.sf.jasperreports:jasperreports:6.3.1'){
+        exclude (module: "itext")
+        exclude (module: "olap4j")
+    }
+    compile 'ar.com.fdvs:DynamicJasper:5.0.11'
+    compile files('libs/db2driver/db2jcc4.jar')
+    testCompile 'io.rest-assured:rest-assured:3.0.2'
+    testCompile 'io.rest-assured:json-schema-validator:3.0.2'
+    testCompile 'com.jayway.restassured:spring-mock-mvc:2.9.0'
+    testCompile'org.springframework.boot:spring-boot-starter-test'
+    testCompile group: 'com.kjetland', name: 'mbknor-jackson-jsonschema_2.12', version: '1.0.23'
+    def powermock_version = '1.6.6'
+    testCompile group: 'org.powermock', name: 'powermock-core', version: powermock_version
+    testCompile group: 'org.powermock', name: 'powermock-api-mockito', version: powermock_version
+    testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: powermock_version
+    testCompile group: 'org.powermock', name: 'powermock-api-easymock', version: powermock_version
+    testCompile group: 'org.easytesting', name: 'fest-assert', version: '1.4'
+}
+
+build {
+    finalizedBy 'sonarqube'
+}
+
+test{
+    exclude '**/HeathCheckTest**'
+}

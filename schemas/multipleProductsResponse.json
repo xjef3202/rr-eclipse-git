@@ -1,0 +1,155 @@
+{
+  "0517298": {
+    "name": "CHEESE BLUE SMOKEHAUS",
+    "materialId": "0517298",
+    "supplier": "",
+    "brand": "SALEM V",
+    "type": "sysco",
+    "description": "Cheese Blue Smokehaus",
+    "nickName": "",
+    "averageWeightPerCase": "7.1",
+    "packSize": {
+      "pack": "1",
+      "size": "6#AVG",
+      "uom": "CS or EA"
+    },
+    "deleted": false,
+    "userImages": [],
+    "isSoldAs": {
+      "isCase": true,
+      "isSplit": false
+    },
+    "isCatchWeight": true,
+    "storageFlag": "C",
+    "isAvailable": true,
+    "replacementMaterialId": "0517298",
+    "hasReplacement": false,
+    "category": {
+      "completeCategoryId": "02004008004",
+      "mainCategoryId": 2,
+      "label": "BLUE"
+    },
+    "messages": [{"type": "info", "message": "Demand status"}],
+    "isOrderable": true,
+    "canBuy": true,
+    "lastOrderedDate":" ",
+    "images": [],
+    "flags": [
+      "Non-SyscoBranded"
+    ],
+    "split": {
+      "min": 0,
+      "max": 0
+    },
+    "stockIndicator": "D",
+    "stockStatus": "Demand status",
+    "coreIndicator": "",
+    "classification": null,
+    "externalUPC": "90711565007870",
+    "manufacturerCode": "210492",
+    "lineDescription": "THIS APPLEWOOD SMOKED BLUE CHEESE IS PRODUCED BY AN AMISH CHEESE COOPERATIVE USING SUSTAINABLE AGRIC ULTURAL PRACTICES.",
+    "portionSize": " "
+  },
+  "0332587": {
+    "name": "SALMON SMOKED SLI WNTR HARBOR",
+    "materialId": "0332587",
+    "supplier": "",
+    "brand": "DUCKTRP",
+    "type": "sysco",
+    "description": "Salmon Smoked Sliced Winter Harbor",
+    "nickName": "",
+    "averageWeightPerCase": "5.15",
+    "packSize": {
+      "pack": "2",
+      "size": "2.5#AV",
+      "uom": "CS or EA"
+    },
+    "deleted": false,
+    "userImages": [],
+    "isSoldAs": {
+      "isCase": true,
+      "isSplit": false
+    },
+    "isCatchWeight": true,
+    "storageFlag": "F",
+    "isAvailable": true,
+    "replacementMaterialId": "0332587",
+    "hasReplacement": false,
+    "category": {
+      "completeCategoryId": "04001009071",
+      "mainCategoryId": 4,
+      "label": "TROUT RAINBOW"
+    },
+    "messages": null,
+    "isOrderable": true,
+    "canBuy": true,
+    "lastOrderedDate":" ",
+    "images": [],
+    "flags": [
+      "Non-SyscoBranded"
+    ],
+    "split": {
+      "min": 0,
+      "max": 0
+    },
+    "stockIndicator": "S",
+    "stockStatus": "Warehouse",
+    "coreIndicator": "",
+    "classification": null,
+    "externalUPC": "20000000000004",
+    "manufacturerCode": "8800021",
+    "lineDescription": "X2 SIDES PER BOX.",
+    "portionSize": " "
+  },
+  "0256009": {
+    "name": "CHEESE MOZZ FRSH CILIENGINI",
+    "materialId": "0256009",
+    "supplier": "",
+    "brand": "GALBANI",
+    "type": "sysco",
+    "description": "Cheese Mozzarella Fresh Ciliegine",
+    "nickName": "",
+    "averageWeightPerCase": "6.0",
+    "packSize": {
+      "pack": "2",
+      "size": "3 LB",
+      "uom": "CS or EA"
+    },
+    "deleted": false,
+    "userImages": [],
+    "isSoldAs": {
+      "isCase": true,
+      "isSplit": false
+    },
+    "isCatchWeight": false,
+    "storageFlag": "C",
+    "isAvailable": true,
+    "replacementMaterialId": "0256009",
+    "hasReplacement": false,
+    "category": {
+      "completeCategoryId": "02004008001",
+      "mainCategoryId": 2,
+      "label": "FRESH & SOFT"
+    },
+    "messages": null,
+    "isOrderable": true,
+    "canBuy": true,
+    "lastOrderedDate":" ",
+    "images": [],
+    "flags": [
+      "Non-SyscoBranded"
+    ],
+    "split": {
+      "min": 0,
+      "max": 0
+    },
+    "stockIndicator": "S",
+    "stockStatus": "Warehouse",
+    "coreIndicator": "",
+    "classification": null,
+    "externalUPC": "10738824816152",
+    "manufacturerCode": "0081615",
+    "lineDescription": "CREAMY IVORY APPEARANCE; SOFT,SLIGHTLY ELASTIC TEXTURE; MILD, DELICATE, MILKY FLAVOR; A VARIETY OFSHAPES AND PACK SIZES",
+    "portionSize": " "
+  }
+}

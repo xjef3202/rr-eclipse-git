@@ -1,0 +1,53 @@
+{
+  "name": "SOUP CREAM OF POTATO CONC",
+  "materialId": "2582005",
+  "supplier": null,
+  "brand": "SYS CLS",
+  "type": "sysco",
+  "description": "Soup Cream Of Potato Concentrate",
+  "nickName": null,
+  "averageWeightPerCase": "12.0",
+  "packSize": {
+    "pack": "3",
+    "size": "4 LB",
+    "uom": "CS or EA"
+  },
+  "deleted": false,
+  "userImages": null,
+  "isSoldAs": {
+    "isCase": true,
+    "isSplit": true
+  },
+  "isCatchWeight": false,
+  "storageFlag": "F",
+  "isAvailable": true,
+  "replacementMaterialId": "2582005",
+  "hasReplacement": false,
+  "category": {
+    "completeCategoryId": "06002055010",
+    "mainCategoryId": 6,
+    "label": "CONCENTRATE"
+  },
+  "messages": null,
+  "isOrderable": true,
+  "canBuy": true,
+  "images": [
+    "./2582005/web/1.jpg",
+    "./2582005/web/2.jpg"
+  ],
+  "flags": [
+    "SyscoBranded"
+  ],
+  "split": {
+    "min": 0,
+    "max": 0
+  },
+  "stockIndicator": "S",
+  "stockStatus": "Warehouse",
+  "coreIndicator": null,
+  "classification": null,
+  "externalUPC": "74865355568",
+  "manufacturerCode": "35556",
+  "lineDescription": "LARGE DICES OF POTATO WITH CARROTS CELERY AND ONIONS BLENDED WITH FRESH CREAM FOR UNMATCHED FLAVOR AND VELVETY MOUTH FEEL. BALANCED FLAVOR AND RELIABLE CONSISTENCY MAKE THIS SOUP AN IDEAL BASE FOR SIGNATURE CLAM CHOWDER AND LOADEDPOTATO SOUPS. - - PRODUCT BENEFITS: SALES SOUP CAN BOOST CHECK AVERAGES BY UP TO FIFTEEN PERCENT. CONSISTENCY SAME HIGHQUALITY AND DELICIOUS TASTE IN EVERY SERVING. VARIETY SUPPLEMENT SCRATCH OFFERINGS WITH DIVERSE FROZEN FLAVORS. -- COMPARABLE PRODUCTS: N/A - - PACKING INFORMATION: SPLIT TRAY PACK MAKES IT EASY TO PREPARE AS LITTLE AS HALF GALLON OF SOUP. EACH TRAYIS LABELED WITH INGREDIENT NUTRITION AND HEATINGINFORMATION. -- PREP & COOKINGINSTRUCTIONS: PREPARATION REMOVE PLASTIC FILM COVER. PLACE BLOCKS OFSOUP IN A SUITABLE CONTAINER.ADD ONE QUART OF WATER FOR EACH BLOCK OF SOUP. ONEHALF OF THE TRAY FILLED TO THE TOP OF THE CENTERDIVIDER IS ONE QUART. COVER AND HEAT TO BOILING WITH OCCASIONAL STIRRING. USE INDIRECT HEAT EX DOUBLE BOILER FOR OPTIMALQUALITY. REDUCE HEAT AND SIMMER FOR TWO TO THREEMINUTES. TRANSFER TO SERVING CONTAINER CAREFULLY.HANDLING GUIDELINES DO NOT USEIF PUNCTURED OR TORN. KEEP FROZEN UNTIL READY TOUSE. DO NOT REFREEZE. PROMPTLY REFRIGERATE UNUSEDCOOKED SOUP IN SEPARATE CONTAINER.",
+  "portionSize": " "
+}

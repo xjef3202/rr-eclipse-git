@@ -1,0 +1,35 @@
+version: '2'
+services:
+#Todo: need update due to product card service
+  smxplus-orch-service:
+    volumes:
+      - /tmp/orch-service/test-reports:/usr/src/orchService/build/reports/tests
+    image: sysco/smxplus-orch-service:${version_number}
+    ports:
+      - '8080:8090'
+    environment:
+      - DB_URL=${DB_URL}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - PRODUCT_SVC_URL=${PRODUCT_SVC_URL}
+      - ITEM_SVC_URL=${ITEM_SVC_URL}
+      - USER_SVC_URL=${USER_SVC_URL}
+      - ORDER_SVC_URL=${ORDER_SVC_URL}
+      - ADMIN_SVC_URL=${ADMIN_SVC_URL}
+      - SMXPLUS_PRODUCT_SVC_URL=${SMXPLUS_PRODUCT_SVC_URL}
+      - NUTRITION_SVC_URL=${NUTRITION_SVC_URL}
+      - IMAGE_SVC_URL=${IMAGE_SVC_URL}
+      - CART_SVC_URL=${CART_SVC_URL}
+      - APPLICATION_ENV=${APPLICATION_ENV}
+    labels:
+      io.rancher.scheduler.affinity:host_label: service=orch
+    logging:
+      driver: "splunk"
+      options:
+        splunk-token: ${SPLUNK_TOKEN}
+        splunk-url: ${SPLUNK_URL}
+        splunk-index: ${SPLUNK_INDEX}
+        splunk-sourcetype: "metrics-logger"
+        splunk-source: "HttpEventCollectorLogbackAppender"
+        splunk-insecureskipverify: "true"
+        tag: "{{.Name}}/{{.FullID}}"

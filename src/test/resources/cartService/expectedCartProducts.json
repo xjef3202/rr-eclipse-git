@@ -1,0 +1,50 @@
+{
+  "header": {
+    "referenceNumber": "123456",
+    "orderNumber": "123456",
+    "name": null,
+    "deliveryDate": null,
+    "status": "Open",
+    "poNumber": null,
+    "invoiceSeparate": false,
+    "shippingCondition": null,
+    "shippingOptions": [
+      "Ground",
+      "Delivered Will Call ",
+      "Will Call"
+    ],
+    "deliveryAddress": null,
+    "deliveryInstructions": null,
+    "opco": null,
+    "customerId": null,
+    "channel": null,
+    "createBy": null,
+    "createDate": null,
+    "lastModifiedBy": null,
+    "lastModifiedDate": null,
+    "totalLineItems": 0,
+    "totalPrice": null,
+    "totalQuantity": 0
+  },
+  "items": [
+    {
+      "lineNumber": 0,
+      "supc": "1",
+      "quantity": 0,
+      "price": null,
+      "soldAs": null,
+      "totalPrice": null,
+      "priceUOM": null,
+      "name": null,
+      "packSize": "null/null",
+      "brand": "B1",
+      "category": {
+        "completeCategoryId": null,
+        "mainCategoryId": null,
+        "label": "123"
+      },
+      "description": null,
+      "stockIndicator": null
+    }
+  ]
+}
